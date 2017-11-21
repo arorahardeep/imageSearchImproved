@@ -2,7 +2,7 @@
 
 This is the improvement over my imageSearch repo. 
 - Under imageSearch the improvement was the introduction of bounding boxes to improve image search
-- Under this repo, there is a further improvement by first captioning the images and then augmenting the image search above by adding searching based on caption similarity as well.
+- Under this repo, I take it a step further by first captioning the images and then using caption similarity to improve the search.
 
 ## Image Captioning
 
