@@ -16,7 +16,7 @@ Then to prove the point this works,
 - I hand captioned 100 odd images and included the cat and dog breed names in the caption and it worked really well.
 - I further realized I can use a model to classify these images into breeds by training on the following dataset  
   - http://www.robots.ox.ac.uk/~vgg/data/pets/
-- Then I can augment the PascalSentences dataset with the class labels of above model to match the performance on hand-captioned images.
+- Then I can augment the PascalSentences dataset captions with the class labels of above model to match the performance on hand-captioned images.
 
 ## Combing the Bounding Box and Caption approach 
 
