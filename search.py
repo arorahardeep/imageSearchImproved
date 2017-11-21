@@ -106,11 +106,11 @@ class ImgSearch:
             vec_nos = 0
             for img_vec in self._img_features:
                 if img_nos != vec_nos:
-                    #score_img = np.linalg.norm(img_vec - base_img_vec)
-                    score_img = 1 - distance.cosine(img_vec, base_img_vec)
+                    score_img = 1 - np.linalg.norm(img_vec - base_img_vec)/100
+                    #score_img = 1 - distance.cosine(img_vec, base_img_vec)
                     score_cap = self.img_similarity_score_based_on_caption(self._file_names[vec_nos],self._file_names[img_nos])
                     score = 0.5*score_img + 0.5*score_cap
-                    #print(score_img, score_cap, score)
+                    print(score_img, score_cap, score)
                 else:
                     score = 0
 
@@ -230,10 +230,13 @@ def img_search_combined(img_name):
                               index=df.index)
 
     for img_name in result.ix[img_name]:
+        if img_name.count('.') > 1:
+            img_name = img_name.rsplit('.',1)[0]
         query.show_image(img_name, img_name)
 
 
 def main():
+    #img_search_caption("Cat_001.jpg")
     ImgSrch = ImgSearch()
     #print(ImgSrch.img_similarity_score_based_on_caption("Cat_001.jpg","Cat_003.jpg"))
     ImgSrch.load_imgs_vectors('./data2/reg_cat_2')
