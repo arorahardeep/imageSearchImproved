@@ -49,12 +49,13 @@ This program creates caption similarity matrix, by comparing each caption with a
 
 > python img_cap_vecs.py
 
-sample output as below    
+sample output as below  
+
 image_name | Cat_001.jpg | Cat_002.jpg | Cat_003.jpg   
 ---------- | ----------- | ----------- | -----------      
-Cat_001.jpg | 0.0 | 0.5622765421867371 | 0.591035008430481  
-Cat_002.jpg | 0.5622765421867371 | 0.0 | 0.5671480298042297       
-Cat_003.jpg | 0.591035008430481 | 0.5671480298042297 | 0.0  
+**Cat_001.jpg** | 0.0 | 0.5622765421867371 | 0.591035008430481  
+**Cat_002.jpg** | 0.5622765421867371 | 0.0 | 0.5671480298042297       
+**Cat_003.jpg** | 0.591035008430481 | 0.5671480298042297 | 0.0  
 
 
 The following file as all the functions to perform image search
