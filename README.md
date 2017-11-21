@@ -26,7 +26,7 @@ All the three approaches demo can been seen in the jupyter notebook "Search Imag
 
 ## Files
 
-The following class the take the idea of word similarity using word2vec and extends it to caption similarity by averaging the word vectors to make caption vectors
+The following class takes the idea of word similarity using word2vec and extends it to caption similarity by averaging the word vectors to get caption vectors. Then I use cosine similarity between the two captions to see how close they are...
 
 > python caption_similarity.py
 
@@ -45,15 +45,16 @@ Run the python 2.7 code in the repo https://github.com/anuragmishracse/caption_g
 > test_model.py: Run it to caption your images 
 
 
-This program creates caption similarity matrix, by comparing each caption with all others. This takes as input the caption generated in above step and outputs a csv file containing similarity scores for between all images x all images
+This program creates caption similarity matrix, by comparing each caption with all others. It takes as input the caption generated in above step and outputs a csv file containing similarity scores for between all images.
 
 > python img_cap_vecs.py
 
-sample output as below
-image_name,Cat_001.jpg,Cat_002.jpg,Cat_003.jpg
-Cat_001.jpg,0.0,0.5622765421867371,0.591035008430481
-Cat_002.jpg,0.5622765421867371,0.0,0.5671480298042297
-Cat_003.jpg,0.591035008430481,0.5671480298042297,0.0
+sample output as below    
+image_name | Cat_001.jpg | Cat_002.jpg | Cat_003.jpg   
+---------- | ----------- | ----------- | -----------      
+Cat_001.jpg | 0.0 | 0.5622765421867371 | 0.591035008430481  
+Cat_002.jpg | 0.5622765421867371 | 0.0 | 0.5671480298042297       
+Cat_003.jpg | 0.591035008430481 | 0.5671480298042297 | 0.0  
 
 
 The following file as all the functions to perform image search
