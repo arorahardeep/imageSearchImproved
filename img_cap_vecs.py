@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-This program loads creates image vectors for each image bounding box
+This program creates caption similarity matrix, by comparing each caption with all others.
 @author : Hardeep Arora
 @date   : 14 Nov 2017
 
