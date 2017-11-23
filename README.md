@@ -62,7 +62,7 @@ The following file as all the functions to perform image search
 
 > python search.py
 
-  - img_search_normal("Cat_008.jpg")   - Does a knive vec to vec similarity
+  - img_search_normal("Cat_008.jpg")   - Does a naive vec to vec similarity
   - img_search_frcnn("Cat_008.jpg")    - Improved image search using bounding boxes (Faster RNN)
   - img_search_caption("Cat_008.jpg")  - Further improvement using caption similarity (Above listed method)
   - img_search_combined("Cat_008.jpg") - Combination of bounding boxes and captions search.
