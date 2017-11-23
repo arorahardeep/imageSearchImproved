@@ -109,7 +109,7 @@ class ImgSearch:
                     score_img = 1 - np.linalg.norm(img_vec - base_img_vec)/100
                     #score_img = 1 - distance.cosine(img_vec, base_img_vec)
                     score_cap = self.img_similarity_score_based_on_caption(self._file_names[vec_nos],self._file_names[img_nos])
-                    score = 0.5*score_img + 0.5*score_cap
+                    score = 0.6*score_img + 0.4*score_cap
                     print(score_img, score_cap, score)
                 else:
                     score = 0
